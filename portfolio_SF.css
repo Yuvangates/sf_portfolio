@@ -1,0 +1,276 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    padding: 5px;
+    font-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+body{
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+}
+header{
+    background-color: #41729F;
+    padding: 3px;
+    color: rgb(216, 80, 80)
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+header h1{
+    color: aliceblue;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #5885AF;
+    padding: 7px 14px;
+}
+
+nav img {
+    margin-right: 20px;
+    height: 100%;
+    max-height: 40px; 
+}
+
+nav a {
+    display: block;
+    color: azure;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    float: right;
+}
+.container {
+    overflow: hidden; 
+}
+
+#img {
+    float: right;
+    max-width: 50%;
+    margin-left: 20px; 
+}
+
+.left-content {
+    max-width: 50%;
+}
+#about_me {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; 
+}
+
+.button-container input[type="button"] {
+    display: inline-block;
+}
+.button{
+    background-color:#274472
+}
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #274472;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #274472;
+    transform: translateY(-3px);
+}
+h2{
+    background-color:#274472;
+    text-align: center;
+    color: #fefefe;
+}
+h2, h3 {
+    text-align: center;
+}
+
+.my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.my-project {
+    position: relative;
+    width: calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center; 
+}
+
+.my-project h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.my-project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.my-project input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #274472;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.my-project:hover {
+    transform: translateY(-10px);
+}
+
+.my-project:hover input[type="button"] {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .my-project {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .my-project {
+        width: 100%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.my-skills {
+    display: grid;
+    grid-template-areas: 
+        "skill1 skill2 skill3"
+        "skill4 skill4 skill5"
+        "skill6 skill6 skill5";
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.my-skill {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.my-skill img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.my-skill h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.my-skill p {
+    font-size: 16px;
+    color: #555;
+}
+
+.my-skill:hover {
+    transform: translateY(-10px);
+}
+
+.my-skill:hover img {
+    opacity: 0.8;
+}
+
+.my-skill:hover h4, .my-skill:hover p {
+    color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    .my-skills {
+        grid-template-areas: 
+            "skill1"
+            "skill2"
+            "skill3"
+            "skill4"
+            "skill5"
+            "skill6";
+    }
+}
+form {
+    background-image: url('developer.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 123, 255, 0.7);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: rgba(0, 123, 255, 0.9);
+    transform: translateY(-3px);
+}
+
+
